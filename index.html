@@ -17,76 +17,181 @@
 </head>
 
 <body>
-    <div class="header-top d-flex align-items-center">
-        <div class="header-top-left me-auto">
-            <i class="far fa-bookmark"></i> Welcome to Franco - an e-Commerce PSD Template!
-        </div>
-        <div class="header-top-right">
-            <ul>
-                <li><i class="fas fa-cog"></i><a href="#">Shop Setting</a></li>
-                <li><i class="fas fa-lock"></i><a href="#">Member Login</a></li>
-            </ul>
+    <div class="header">
+        <div class="header-top d-flex align-items-center">
+            <div class="header-top-left me-auto">
+                <i class="far fa-bookmark"></i> Welcome to Franco - an e-Commerce PSD Template!
+            </div>
+            <div class="header-top-right">
+                <ul>
+                    <li><i class="fas fa-cog"></i><a href="#">Shop Setting</a></li>
+                    <li><i class="fas fa-lock"></i><a href="#">Member Login</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <!-- Main menu -->
     <div class="menu">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="logo d-flex align-items-center justify-content-center">
-                    franco
+        <div class="menu-pc">
+            <div class="row abc">
+                <div class="col-xl-3 col-lg-3">
+                    <div class="logo d-flex align-items-center justify-content-center">
+                        franco
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 d-flex justify-content-center align-items-center">
+                    <div class="main-menu">
+                        <ul>
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">women</a></li>
+                            <li><a href="#">men</a></li>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">blog</a></li>
+                            <li><a href="#">collections</a></li>
+                            <li><a href="#">contact</a></li>
+                            <li>
+                                <a href="#"><label for="search_hidden_mobile" class="fas fa-search"></label></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-2 d-flex justify-content-end align-items-center icon">
+                    <div class="cart">
+                        <a href="#"><i class="far fa-heart"></i></a>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
                 </div>
             </div>
-            <div class="
-            col-md-6
-            main-menu
-            d-flex
-            justify-content-center
-            align-items-center
-          ">
-                <ul>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">women</a></li>
-                    <li><a href="#">men</a></li>
-                    <li><a href="#">about us</a></li>
-                    <li><a href="#">blog</a></li>
-                    <li><a href="#">collections</a></li>
-                    <li><a href="#">contact</a></li>
-                    <li>
-                        <a href="#"><i class="fas fa-search"></i></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-3 d-flex justify-content-end align-items-center icon">
-                <a href="#"><i class="far fa-heart"></i></a>
-                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+
+        <!-- Menu mobile -->
+        <div class="menu-mobile">
+            <div class="menu-mobile-main">
+                <div class="row menu-mobile-main-row">
+                    <input type="checkbox" hidden class="search_hidden_input" id="search_hidden_mobile" />
+                    <label for="search_hidden_mobile" class="overlay-search"></label>
+
+                    <input type="checkbox" hidden class="nav_hidden_input" id="nav_hidden_mobile" />
+                    <label for="nav_hidden_mobile" class="overlay"></label>
+
+                    <input type="checkbox" hidden class="cart_hidden_input" id="cart_hidden_mobile" />
+                    <label for="cart_hidden_mobile" class="overlay-cart"></label>
+
+                    <input type="checkbox" hidden class="wish-list_hidden_input" id="wish-list_hidden_mobile" />
+
+                    <div class="col-lg-4 col-4 menu-mobile-left d-flex align-items-center">
+                        <label for="nav_hidden_mobile" class="icon-nav-mobile"><i class="fas fa-bars icon-menu-mobile"></i
+              ></label>
+                        <label for="search_hidden_mobile" class="icon-nav-mobile">
+                <i class="fas fa-search icon-menu-mobile"></i
+              ></label>
+                    </div>
+                    <div class="col-lg-4 col-4 menu-mobile-logo logo d-flex align-items-center">
+                        franco
+                    </div>
+                    <div class="col-lg-4 col-4 menu-mobile-right d-flex align-items-center justify-content-end">
+                        <i class="far fa-heart icon-menu-mobile"></i>
+                        <label for="cart_hidden_mobile" class="fas fa-shopping-cart icon-menu-mobile"></label>
+                    </div>
+
+                    <div class="nav_mobile">
+                        <div class="title-menu d-flex align-items-center">
+                            <h1 class="me-auto">menu</h1>
+                            <label for="nav_hidden_mobile" class="fas fa-times"></label>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">home <i class="fas fa-chevron-right float-end"></i
+                  ></a>
+                            </li>
+                            <li>
+                                <a href="#">women <i class="fas fa-chevron-right float-end"></i
+                  ></a>
+                            </li>
+                            <li>
+                                <a href="#">men <i class="fas fa-chevron-right float-end"></i
+                  ></a>
+                            </li>
+                            <li>
+                                <a href="#">about us <i class="fas fa-chevron-right float-end"></i
+                  ></a>
+                            </li>
+                            <li>
+                                <a href="#">blog <i class="fas fa-chevron-right float-end"></i
+                  ></a>
+                            </li>
+                            <li>
+                                <a href="#">collections <i class="fas fa-chevron-right float-end"></i
+                  ></a>
+                            </li>
+                            <li>
+                                <a href="#">contact <i class="fas fa-chevron-right float-end"></i
+                  ></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="input_search">
+                        <input type="text" placeholder="Searching for..." />
+                    </div>
+
+                    <div class="cart_mobile">
+                        <div class="cart_mobile_top">
+                            <div class="
+                    cart_mobile_title
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                  ">
+                                your card
+                            </div>
+
+                            <div class="close-cart">
+                                <label for="cart_hidden_mobile"><i class="fas fa-times"></i
+                  ></label>
+                            </div>
+                            <div class="quality-cart">
+                                <p>0</p>
+                            </div>
+                        </div>
+                        <div class="cart_mobile_content">
+                            <div class="cart_mobile_list_item">
+                                <p>No products in the cart.</p>
+                                <a href="">Start shopping</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <!-- End main menu -->
     <!-- Banner -->
     <div class="banner">
-        <div class="container d-flex justify-content-center">
-            <div class="main-banner float-left">
-                <img src="assets/images/banner1.png" alt="" />
-                <div class="main-banner-title text-end">
-                    <p>Two High-end Materials</p>
-                    <a href="#">Shop Now</a>
-                </div>
-            </div>
-            <div class="banner-right float-right">
-                <div class="banner-top">
-                    <img src="assets/images/banner2.png" alt="" />
-                    <div class="banner-top-title">
-                        <p class="title-top">small thing</p>
-                        <p class="title-bottom">make different</p>
+        <div class="container">
+            <div class="list-banner">
+                <div class="main-banner">
+                    <img src="assets/images/banner1.png" alt="" />
+                    <div class="main-banner-title text-end">
+                        <p>Two High-end Materials</p>
+                        <a href="#">Shop Now</a>
                     </div>
                 </div>
-                <div class="banner-bottom">
-                    <img src="assets/images/banner3.png" alt="" />
-                    <div class="banner-bottom-title">
-                        <p class="title-top">folio</p>
-                        <p class="title-bottom">backpack</p>
-                        <a href="#">Shop Now</a>
+                <div class="banner-right">
+                    <div class="banner-top">
+                        <img src="assets/images/banner2.png" alt="" />
+                        <div class="banner-top-title">
+                            <p class="title-top">small thing</p>
+                            <p class="title-bottom">make different</p>
+                        </div>
+                    </div>
+                    <div class="banner-bottom">
+                        <img src="assets/images/banner3.png" alt="" />
+                        <div class="banner-bottom-title">
+                            <p class="title-top">folio</p>
+                            <p class="title-bottom">backpack</p>
+                            <a href="#">Shop Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -104,9 +209,9 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="product-item d-flex justify-content-center">
-                    <div class="col-md-3 col-sm-6 pro-item">
+            <div class="product-item">
+                <div class="row mb-5">
+                    <div class="col-xl-3 col-sm-6 col-6 pro-item">
                         <div class="product-image">
                             <img src="assets/images/sp1.png" alt="" />
                             <div class="add-cart">
@@ -120,7 +225,7 @@
                         </div>
                         <p class="price"><del>$99.00 </del>$84.00</p>
                     </div>
-                    <div class="col-md-3 col-sm-6 pro-item">
+                    <div class="col-xl-3 col-sm-6 col-6 pro-item">
                         <div class="product-image">
                             <img src="assets/images/sp2.png" alt="" />
                             <div class="add-cart">
@@ -134,7 +239,7 @@
                         </div>
                         <p class="price"><del>$99.00 </del>$84.00</p>
                     </div>
-                    <div class="col-md-3 pro-item">
+                    <div class="col-xl-3 col-sm-6 col-6 pro-item">
                         <div class="product-image">
                             <img src="assets/images/sp3.png" alt="" />
                             <div class="add-cart">
@@ -148,7 +253,7 @@
                         </div>
                         <p class="price"><del>$99.00 </del>$84.00</p>
                     </div>
-                    <div class="col-md-3 pro-item">
+                    <div class="col-xl-3 col-sm-6 col-6 pro-item">
                         <div class="product-image">
                             <img src="assets/images/sp4.png" alt="" />
                             <div class="add-cart">
@@ -164,11 +269,11 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="product-item d-flex justify-content-center">
-                    <div class="col-md-3 col-sm-6 pro-item">
+            <div class="product-item">
+                <div class="row mb-4">
+                    <div class="col-xl-3 col-sm-6 col-6 pro-item">
                         <div class="product-image">
-                            <img src="assets/images/sp5.png" alt="" />
+                            <img src="assets/images/sp1.png" alt="" />
                             <div class="add-cart">
                                 <a href="#">Add to cart</a>
                             </div>
@@ -180,9 +285,9 @@
                         </div>
                         <p class="price"><del>$99.00 </del>$84.00</p>
                     </div>
-                    <div class="col-md-3 col-sm-6 pro-item">
+                    <div class="col-xl-3 col-sm-6 col-6 pro-item">
                         <div class="product-image">
-                            <img src="assets/images/sp6.png" alt="" />
+                            <img src="assets/images/sp2.png" alt="" />
                             <div class="add-cart">
                                 <a href="#">Add to cart</a>
                             </div>
@@ -194,9 +299,9 @@
                         </div>
                         <p class="price"><del>$99.00 </del>$84.00</p>
                     </div>
-                    <div class="col-md-3 pro-item">
+                    <div class="col-xl-3 col-sm-6 col-6 pro-item">
                         <div class="product-image">
-                            <img src="assets/images/sp7.png" alt="" />
+                            <img src="assets/images/sp3.png" alt="" />
                             <div class="add-cart">
                                 <a href="#">Add to cart</a>
                             </div>
@@ -208,9 +313,9 @@
                         </div>
                         <p class="price"><del>$99.00 </del>$84.00</p>
                     </div>
-                    <div class="col-md-3 pro-item">
+                    <div class="col-xl-3 col-sm-6 col-6 pro-item">
                         <div class="product-image">
-                            <img src="assets/images/sp8.png" alt="" />
+                            <img src="assets/images/sp4.png" alt="" />
                             <div class="add-cart">
                                 <a href="#">Add to cart</a>
                             </div>
@@ -236,7 +341,7 @@
                     <h1>news & Events</h1>
                 </div>
             </div>
-            <div class="row">
+            <div class="row slider-post">
                 <div class="slider">
                     <div class="post">
                         <div class="post-item">
@@ -479,25 +584,34 @@
     <!-- Footer -->
     <div class="footer">
       <div class="container">
-        <div class="row">
-          <div class="footer-content d-flex justify-content-center">
-            <div class="col-4 footer-about">
-              <div class="title">About Franco</div>
-              <div class="content">
-                <p>
-                  Aliquam tempor sagittis neque, vel aliquam risus consectetur
-                  vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris
-                  vulputate mi, eu interdum nunc diam at ipsum.
-                </p>
+        <div class="footer-content">
+          <div class="row">
+            <div
+              class="col-xl-4 col-sm-12 col-12 col-footer footer-about"
+            >
+              <div class="about">
+                <div class="title">About Franco</div>
+                <div class="content">
+                  <p>
+                    Aliquam tempor sagittis neque, vel aliquam risus consectetur
+                    vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris
+                    vulputate mi, eu interdum nunc diam at ipsum.
+                  </p>
+                </div>
+                <div class="social-media"></div>
               </div>
-              <div class="social-media"></div>
             </div>
-            <div class="col-4 navigation">
-              <div class="title">Navigation</div>
-              <div class="row">
-                <div class="col-6">
-                  <ul>
-                    <li><a href="#">Home</a></li>
+            <div
+              class="
+                col-xl-4 col-sm-12 col-12 col-footer
+              "
+            >
+              <div class="navigation">
+                <div class="title">Navigation</div>
+                <div class="row">
+                  <div class="col-6">
+                    <ul>
+                      <li><a href="#">Home</a></li>
                                 <li><a href="#">About Us</a></li>
                                 <li><a href="#">Our Blog</a></li>
                                 <li><a href="#">Women</a></li>
@@ -517,7 +631,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 location">
+                </div>
+
+                <div class="
+                  col-xl-4 col-sm-12 col-12 col-footer
+ 
+                ">
+                    <div class="location">
                         <div class="title">Shop location</div>
                         <div class="location-content">
                             <ul>
@@ -535,36 +655,41 @@
             </div>
         </div>
     </div>
+    </div>
+    </div>
     <div class="footer-bottom">
         <div class="container">
-            <div class="footer-bottom-content d-flex align-items-center">
-                <div class="footer-bottom-left me-auto">
-                    © Copyright 2015 & Made with by <i class="fas fa-heart"></i>
-                    <a href="#">ArrowHitech</a> .
-                </div>
-                <div class="footer-bottom-right">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <i class="fab fa-cc-visa"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fab fa-cc-paypal"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fab fa-cc-visa"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fab fa-cc-visa"></i>
-                            </a>
-                        </li>
-                    </ul>
+            <div class="footer-bottom-content">
+                <div class="row">
+                    <div class="col-xl-6 col-sm-12 col-12 footer-bottom-left">
+                        © Copyright 2015 & Made with by <i class="fas fa-heart"></i>
+                        <a href="#">ArrowHitech</a> .
+                    </div>
+                    <div class="col-xl-6 col-sm-12 col-12 footer-bottom-right">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-cc-visa"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-cc-paypal"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-cc-mastercard"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-cc-discover"></i>
+                                </a>
+                            </li>
+                            <li><a href="#"><i class="fab fa-cc-amex"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
