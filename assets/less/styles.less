@@ -92,29 +92,59 @@ video {
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800;900&display=swap");
 
 @main-font: "Montserrat", sans-serif;
-@background-color-header-top: #222;
+@hover: #8262b5;
+@color-main-text:#000;
+@content-footer:#6e6e6e;
+@title-content-footer:#f7f7f7;
+@background-footer:#222222;
+@border-footer: #393939;
+@social-icon: #828282;
+@comment-post:#c0c0c0;
+@border-post:#ededed;
+@content-post:#424242;
+@title-post:#000;
+@background-date-post:#a1d1dd;
+@content-date-post:#fff;
+@border-background-date-post:#fff;
+@title-small-section:#8262b5;
+@title-big-section:#000;
+@price-sale: #999999;
+@price:#8262b5;
+@title-product:#000;
+@background-add-cart: #fff;
+@background-button-banner: #8262b5;
+@text-button-banner:#fff;
+@title-main-banner:#000;
+@title-banner:#616161;
+@background-header-top:#222222;
+@text-header-top:#525252;
+@start-light: #f9c325;
+@start-dark: #d1d1d1;
+@background-post:#fff;
+@heart-icon:#ff4628;
 
 /* Header-top*/
+
 .header-top {
   width: 100%;
   background-color: @background-color-header-top;
   height: 45px;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  color: #525252;
-  padding-left: 30px;
+  color: @text-header-top;
+  padding-left: 15px;
   .header-top-right {
     ul {
       list-style: none;
       li {
         display: inline-block;
-        margin: 0px 15px;
+        margin: 0px 16px;
         i {
           margin-right: 5px;
         }
         a {
           text-decoration: none;
-          color: #525252;
+          color: @text-header-top;
           font-size: 14px;
           &:hover {
             text-decoration: underline;
@@ -129,14 +159,14 @@ video {
 .menu {
   height: 80px;
   border-bottom: 1px solid #ddd;
-  padding: 20px 0px 20px 30px;
+  padding: 20px 0 20px 20px;
   .menu-pc-row {
-  margin-right: 0px;
+  margin-right: 0;
 }
   .icon {
     i {
       font-size: 25px;
-      color: #000;
+      color: @color-main-text;
     }
     .wish-list-icon {
       margin: 1px 27px;
@@ -147,7 +177,7 @@ video {
   width: 200px;
   letter-spacing: 15px;
   height: 40px;
-  border: 2px solid #000;
+  border: 2px solid @color-main-text;
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
@@ -155,38 +185,42 @@ video {
   padding-left: 15px;
   line-height: 15px;
 }
+.menu-center{
+  padding-left: 40px;
+}
 .main-menu {
   ul {
     li {
       display: inline-block;
-      margin: 0px 25px;
+      margin-right: 50px;
       a {
         text-decoration: none;
         text-transform: uppercase;
-        color: #000;
+        color: @color-main-text;
         font-size: 14px;
         font-family: @main-font;
         font-weight: 700;
         &:hover {
-          color: #8262b5;
+          color: @hover;
         }
       }
     }
   }
 }
 .cart {
+  padding-right: 20px;
   a {
     i {
       &:hover {
-        color: #8262b5;
+        color: @hover;
       }
     }
     label {
       font-size: 25px;
-      color: #000;
+      color: @color-main-text;
       cursor: pointer;
       &:hover {
-        color: #8262b5;
+        color: @hover;
       }
     }
   }
@@ -195,9 +229,6 @@ video {
 /* Banner*/
 .banner {
   padding: 30px 0px 0px;
-}
-.list-banner {
-  margin-left: 85px;
 }
 .main-banner {
   position: relative;
@@ -214,14 +245,14 @@ video {
     }
     a {
       padding: 10px 17px;
-      background-color: #8262b5;
+      background-color: @background-button-banner;
       text-decoration: none;
-      color: #fff;
+      color: @text-button-banner;
       font-family: @main-font;
       font-size: 14px;
       &:hover {
-        color: #fff;
-        background-color: #000;
+        color: @text-button-banner;
+        background-color: @color-main-text;
       }
     }
   }
@@ -244,11 +275,11 @@ video {
     .title-top {
       letter-spacing: 3px;
       font-size: 16px;
-      color: #616161;
+      color: @title-banner;
     }
     .title-bottom {
       font-weight: 500;
-      color: #000;
+      color: @title-main-banner;
       font-size: 20px;
     }
   }
@@ -267,24 +298,24 @@ video {
     .title-top {
       letter-spacing: 3px;
       font-size: 16px;
-      color: #616161;
+      color: @title-banner;
     }
     .title-bottom {
       font-weight: 500;
-      color: #000;
+      color: @title-main-banner;
       font-size: 20px;
       margin-bottom: 27px;
     }
     a {
       padding: 10px 15px 10px 22px;
-      background-color: #8262b5;
+      background-color: @hover;
       text-decoration: none;
       color: #fff;
       font-family: @main-font;
       font-size: 14px;
       &:hover {
         color: #fff;
-        background-color: #000;
+        background-color: @color-main-text;
       }
     }
   }
@@ -296,12 +327,11 @@ video {
   margin-bottom: 74px;
   padding-top: 71px;
   &-title {
-    padding-left: 96px;
     margin-bottom: 25px;
     p {
       font-size: 12px;
       letter-spacing: 6px;
-      color: #8262b5;
+      color: @title-small-section;
       font-weight: 700;
       font-family: @main-font;
       text-transform: uppercase;
@@ -312,14 +342,14 @@ video {
         content: "";
         display: block;
         width: 52px;
-        border-bottom: 2px solid #8262b5;
+        border-bottom: 2px solid @hover;
         margin: 23px 1px;
       }
       span {
         font-size: 24px;
         font-family: @main-font;
         text-transform: uppercase;
-        color: #000;
+        color: @color-main-text;
         font-weight: 700;
         letter-spacing: 2px;
       }
@@ -329,17 +359,14 @@ video {
 .row-pro-first {
   margin-bottom: 45px;
 }
-.product-item {
-  padding: 0px 63px 0px 88px;
-}
 .pro-item {
   a {
     text-decoration: none;
     font-size: 14px;
-    color: #000;
+    color: @title-product;
     font-family: @main-font;
     &:hover {
-      color: #8262b5;
+      color: @hover;
     }
   }
   .product-image {
@@ -354,12 +381,12 @@ video {
         text-transform: uppercase;
         font-family: @main-font;
         font-weight: 400;
-        color: #424242;
+        color: @color-main-text;
         padding: 12px 15px;
-        background: #fff;
+        background: @background-add-cart;
         text-decoration: none;
         &:hover {
-          color: #8262b5;
+          color: @hover;
         }
       }
     }
@@ -367,20 +394,20 @@ video {
   .rate {
     margin: 6px 0px;
     .icon-start-end {
-      color: #d1d1d1;
+      color:@start-dark;
     }
     i {
       font-size: 12px;
-      color: #f9c325;
+      color: @start-light;
     }
   }
   .price {
-    color: #8262b5;
+    color: @price;
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     del {
-      color: #9f9f9f;
+      color: @price-sale;
       font-weight: none;
     }
   }
@@ -391,27 +418,27 @@ video {
   background-image: url("../images/background-blogs.png");
   padding: 77px 0px 80px;
   &-title {
-    padding-left: 35px;
     font-weight: 700;
     font-family: @main-font;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 50px;
+    width: 100%;
     p {
       font-size: 12px;
       letter-spacing: 6px;
-      color: #8262b5;
+      color: @title-small-section;
       margin-bottom: 11px;
     }
     h1 {
       font-size: 24px;
       letter-spacing: 2px;
-      color: #000000;
+      color: @title-big-section;
       &::after {
         content: "";
         display: block;
         width: 4%;
-        border-bottom: 1px solid #8262b5;
+        border-bottom: 1px solid @hover;
         margin-top: 22px;
         text-align: center;
         margin-left: 48%;
@@ -420,16 +447,23 @@ video {
   }
 }
 .slider {
-  margin-left: 11px;
+  width: 100%;
 }
+.slick-active{
+  button{
+    &::before{
+    color: @hover !important; 
+    font-size: 14px !important;
+    }
+  }
+}
+
 .slick-slide {
   text-align: center;
-}
-.post-item {
-  width: 360px;
-  background-color: #fff;
+  margin: 0 15px;
 }
 .post {
+    background-color: @background-post;
   &-image {
     position: relative;
     img {
@@ -442,17 +476,17 @@ video {
     top: 22px;
     left: 20px;
     padding: 10px;
-    background-color: #a1d1dd;
+    background-color:@background-date-post;
     padding: 14px 14px 8px;
     p {
       font-family: @main-font;
-      color: #fff;
+      color: @content-date-post;
     }
     .moth {
       font-size: 14px;
     }
     &::before {
-      border: 1px solid #fff;
+      border: 1px solid @border-background-date-post;
       content: "";
       position: absolute;
       top: 6px;
@@ -464,14 +498,14 @@ video {
   &-content {
     text-align: start;
     padding: 18px 0px 16px 17px;
-    border-bottom: 1px solid #ededed;
+    border-bottom: 1px solid @border-post;
     a {
       text-decoration: none;
       font-size: 16px;
-      color: #000;
+      color: @color-main-text;
       font-family: @main-font;
       &:hover {
-        color: #8262b5;
+        color: @hover;
       }
     }
     p {
@@ -486,22 +520,24 @@ video {
     p {
       font-size: 14px;
       margin-right: 30px;
-      color: #c0c0c0;
+      color: @comment-post;
       i {
-        color: #c0c0c0;
+        color: @comment-post;
         margin-right: 3px;
       }
     }
   }
+ .slick-active {
+  button:before {
+    opacity: .75;
+    color: @hover !important;
+}
+ }
 }
 
 /* Footer */
 .footer {
-  background-color: #000;
-
-  &-content {
-    padding: 0px 85px;
-  }
+  background-color: @background-footer;
 }
 .footer-about {
   .title {
@@ -512,7 +548,7 @@ video {
     p {
       font-family: "Open Sans", sans-serif;
       font-size: 14px;
-      color: #6e6e6e;
+      color: @title-content-footer;
       line-height: 22px;
     }
   }
@@ -520,7 +556,7 @@ video {
     margin: 44px 0px 45px;
     a {
       .icon-social {
-        color: #c0c0c0;
+        color: @social-icon;
         margin-right: 30px;
         font-size: 15px;
       }
@@ -528,13 +564,12 @@ video {
   }
 }
 .navigation {
-  padding-left: 6px;
+
   .title {
     width: 360px;
   }
   .list-sevice {
-    padding-left: 20px;
-    padding-top: 1px;
+    padding-left: 15px;
   }
   ul {
     li {
@@ -542,12 +577,12 @@ video {
       margin-bottom: 11px;
       a {
         text-decoration: none;
-        color: #6e6e6e;
+        color: @content-footer;
         font-size: 14px;
         font-family: "Open Sans", sans-serif;
         &:hover {
           text-decoration: underline;
-          color: #f7f7f7;
+          color: @title-content-footer;
         }
       }
     }
@@ -565,8 +600,15 @@ video {
         margin-bottom: 5px;
         font-family: "Open Sans", sans-serif;
         font-size: 14px;
-        color: #6e6e6e;
+        color: @content-footer;
         line-height: 30px;
+        a{
+          text-decoration: none;
+          color: @content-footer;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
         i {
           margin-right: 13px;
         }
@@ -577,25 +619,25 @@ video {
 .title {
   font-size: 16px;
   font-family: @main-font;
-  color: #f7f7f7;
+  color: @title-content-footer;
   letter-spacing: 1px;
   padding-bottom: 26px;
   border-bottom: 1px solid #393939;
   margin-bottom: 22px;
 }
 .footer-bottom {
-  background: #000;
-  border-top: 1px solid #393939;
+  background: @background-footer;
+  border-top: 1px solid @border-footer;
   padding: 25px 0px;
   &-left {
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
-    color: #6e6e6e;
+    color: @content-footer;
     i {
-      color: #ff4628;
+      color:@heart-icon;
     }
     a {
-      color: #f7f7f7;
+      color: @title-content-footer;
       text-decoration: none;
       &:hover {
         text-decoration: underline;
@@ -611,14 +653,11 @@ video {
         a {
           i {
             font-size: 20px;
-            color: #6e6e6e;
+            color: @content-footer;
           }
         }
       }
     }
-  }
-  &-content {
-    padding: 0px 69px 0px 85px;
   }
 }
 
@@ -661,7 +700,7 @@ video {
     h1 {
       text-transform: uppercase;
       text-decoration: none;
-      color: #000;
+      color: @color-main-text;
       text-transform: uppercase;
       font-family: @main-font;
       letter-spacing: 2px;
@@ -687,7 +726,7 @@ video {
 
       a {
         text-decoration: none;
-        color: #000;
+        color: @color-main-text;
         text-transform: uppercase;
         font-family: @main-font;
         letter-spacing: 2px;
@@ -756,7 +795,7 @@ video {
     padding: 12px 0 10px 5px;
     letter-spacing: 3px;
     line-height: 24px;
-    color: #000;
+    color: @color-main-text;
     font-family: @main-font;
   }
 
@@ -804,7 +843,7 @@ video {
     padding: 12px 0 10px 5px;
     letter-spacing: 3px;
     line-height: 24px;
-    color: #000;
+    color: @color-main-text;
     font-family: @main-font;
   }
 
@@ -842,12 +881,12 @@ video {
     line-height: 24px;
 
     a {
-      color: #000;
+      color: @color-main-text;
       text-decoration: none;
     }
 
     a:active {
-      color: #000;
+      color: @color-main-text;
       text-decoration: none;
     }
   }
@@ -904,7 +943,7 @@ video {
   p {
     font-size: 22px;
     line-height: 1.2;
-    color: #000000;
+    color: @color-main-text;
     text-align: center;
     font-family: @main-font;
   }
@@ -915,7 +954,7 @@ video {
     min-width: 200px;
     height: 50px;
     line-height: 50px;
-    background-color: #000000;
+    background-color: @color-main-text;
     color: #ffffff;
     font-size: 12px;
     font-family: @main-font;
@@ -965,8 +1004,8 @@ video {
     padding-left: 20px;
   }
   .product-item {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .product-image {
     img {
@@ -994,7 +1033,7 @@ video {
     text-align: center;
   }
   .menu-mobile-main-row {
-    margin-right: 0px;
+    margin-right: 0;
   }
   .footer-bottom-left {
     text-align: center;
@@ -1084,15 +1123,13 @@ video {
   }
   .slider {
     margin-left: 0px;
+    width: 100%;
   }
   .footer-bottom-content {
     padding: 0px;
   }
   .footer-bottom-right {
     margin-top: 20px;
-  }
-  .menu-mobile-logo {
-    margin: 0px 18px;
   }
   .footer {
     padding: 60px 0px 30px;
@@ -1105,9 +1142,6 @@ video {
   }
 }
 @media (min-width: 1024px) and (max-width: 1199px) {
-  .menu-mobile-logo {
-    margin: 0px 57px;
-  }
   .main-banner-title {
     right: 13%;
     bottom: 30%;
@@ -1139,7 +1173,7 @@ video {
     height: 30px;
     font-size: 12px;
     line-height: 2px;
-    margin: 0px 2px;
+        padding: 0 10px;
   }
   .menu {
     height: 70px;
@@ -1305,6 +1339,9 @@ video {
   }
 }
 @media (min-width: 1200px) {
+  .container{
+  box-sizing: content-box;
+}
   .menu-mobile {
     display: none;
   }
@@ -1312,10 +1349,7 @@ video {
     text-align: end;
   }
   .location {
-    padding: 0px 31%;
-  }
-  .slider-post {
-    margin-left: 52px;
+    padding: 0px 27%;
   }
   .post-imgage {
     img {
@@ -1331,10 +1365,6 @@ video {
       height: 200px;
     }
   }
-  .slick-slider {
-    width: 95% !important;
-  }
-
   .footer {
     padding: 60px 0px 0px;
   }

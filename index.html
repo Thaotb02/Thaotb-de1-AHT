@@ -6,28 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Đề 1 - Thaotb</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <!-- Slick css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <!-- <script src="//cdn.jsdelivr.net/npm/less@3.13"></script> -->
 </head>
 
 <body>
     <!-- Header-top -->
     <div class="header">
-        <div class="header-top d-flex align-items-center">
-            <div class="header-top-left me-auto">
-                <i class="far fa-bookmark"></i> Welcome to Franco - an e-Commerce PSD Template!
-            </div>
-            <div class="header-top-right">
-                <ul>
-                    <li><i class="fas fa-cog"></i><a href="#">Shop Setting</a></li>
-                    <li><i class="fas fa-lock"></i><a href="#">Member Login</a></li>
-                </ul>
+        <div class="container-fluid p-0">
+            <div class="header-top d-flex align-items-center">
+                <div class="header-top-left mr-auto p-2">
+                    <i class="far fa-bookmark"></i> Welcome to Franco - an e-Commerce PSD Template!
+                </div>
+                <div class="header-top-right">
+                    <ul>
+                        <li><i class="fas fa-cog"></i><a href="#">Shop Setting</a></li>
+                        <li><i class="fas fa-lock"></i><a href="#">Member Login</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -36,149 +38,51 @@
     <!-- Main menu -->
     <div class="menu">
         <div class="menu-pc">
-            <div class="row menu-pc-row">
-                <div class="col-xl-3 col-lg-3">
-                    <div class="logo d-flex align-items-center justify-content-center">
-                        franco
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 d-flex justify-content-center align-items-center">
-                    <div class="main-menu">
-                        <ul>
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">women</a></li>
-                            <li><a href="#">men</a></li>
-                            <li><a href="#">about us</a></li>
-                            <li><a href="#">blog</a></li>
-                            <li><a href="#">collections</a></li>
-                            <li><a href="#">contact</a></li>
-                            <li>
-                                <a href="#"><i class="fas fa-search"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-2 d-flex justify-content-end align-items-center icon">
-                    <div class="cart">
-                        <a href="#"><i class="far fa-heart wish-list-icon"></i></a>
-                        <a href="#"><label for="cart_hidden_pc" class="fas fa-shopping-cart"></i></a>
-                    </div>
-                </div>
-                <input type="checkbox" hidden class="cart_hidden_input_pc" id="cart_hidden_pc" />
-                <label for="cart_hidden_pc" class="overlay-cart-pc"></label>
-
-                <div class="cart_pc">
-                    <div class="cart_pc_top">
-                        <div class="
-                    cart_pc_title
-                    d-flex
-                    justify-content-center
-                    align-items-center
-                  ">
-                            your card
-                        </div>
-                        <div class="close-cart">
-                            <label for="cart_hidden_pc" class="fas fa-times"></label>
-                        </div>
-                        <div class="quality-cart">
-                            <p>0</p>
+            <div class="container-fluid p-0">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3">
+                        <div class="logo d-flex align-items-center justify-content-center">
+                            franco
                         </div>
                     </div>
-                    <div class="cart_mobile_content">
-                        <div class="cart_mobile_list_item">
-                            <p>No products in the cart.</p>
-                            <a href="">Start shopping</a>
+                    <div class="col-xl-6 col-lg-6 d-flex justify-content-center align-items-center menu-center">
+                        <div class="main-menu">
+                            <ul>
+                                <li><a href="#">home</a></li>
+                                <li><a href="#">women</a></li>
+                                <li><a href="#">men</a></li>
+                                <li><a href="#">about us</a></li>
+                                <li><a href="#">blog</a></li>
+                                <li><a href="#">collections</a></li>
+                                <li><a href="#">contact</a></li>
+                                <li>
+                                    <a href="#"><i class="fas fa-search"></i></a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Menu mobile -->
-        <div class="menu-mobile">
-            <div class="menu-mobile-main">
-                <div class="row menu-mobile-main-row">
-                    <input type="checkbox" hidden class="search_hidden_input" id="search_hidden_mobile" />
-                    <label for="search_hidden_mobile" class="overlay-search"></label>
-
-                    <input type="checkbox" hidden class="nav_hidden_input" id="nav_hidden_mobile" />
-                    <label for="nav_hidden_mobile" class="overlay"></label>
-
-                    <input type="checkbox" hidden class="cart_hidden_input" id="cart_hidden_mobile" />
-                    <label for="cart_hidden_mobile" class="overlay-cart"></label>
-
-                    <input type="checkbox" hidden class="wish-list_hidden_input" id="wish-list_hidden_mobile" />
-
-                    <div class="col-lg-4 col-4 menu-mobile-left d-flex align-items-center">
-                        <label for="nav_hidden_mobile" class="icon-nav-mobile"><i class="fas fa-bars icon-menu-mobile"></i
-              ></label>
-                        <label for="search_hidden_mobile" class="icon-nav-mobile">
-                <i class="fas fa-search icon-menu-mobile"></i
-              ></label>
-                    </div>
-                    <div class="col-lg-4 col-4 menu-mobile-logo logo d-flex align-items-center">
-                        franco
-                    </div>
-                    <div class="col-lg-4 col-4 menu-mobile-right d-flex align-items-center justify-content-end">
-                        <i class="far fa-heart icon-menu-mobile"></i>
-                        <label for="cart_hidden_mobile" class="fas fa-shopping-cart icon-menu-mobile"></label>
-                    </div>
-
-                    <div class="nav_mobile">
-                        <div class="title-menu d-flex align-items-center">
-                            <h1 class="me-auto">menu</h1>
-                            <label for="nav_hidden_mobile" class="fas fa-times"></label>
+                    <div class="col-xl-3 col-lg-2 d-flex justify-content-end align-items-center icon">
+                        <div class="cart">
+                            <a href="#"><i class="far fa-heart wish-list-icon"></i></a>
+                            <a href="#"><label for="cart_hidden_pc" class="fas fa-shopping-cart"></i></a>
                         </div>
-                        <ul>
-                            <li>
-                                <a href="#">home <i class="fas fa-chevron-right float-end"></i
-                  ></a>
-                            </li>
-                            <li>
-                                <a href="#">women <i class="fas fa-chevron-right float-end"></i
-                  ></a>
-                            </li>
-                            <li>
-                                <a href="#">men <i class="fas fa-chevron-right float-end"></i
-                  ></a>
-                            </li>
-                            <li>
-                                <a href="#">about us <i class="fas fa-chevron-right float-end"></i
-                  ></a>
-                            </li>
-                            <li>
-                                <a href="#">blog <i class="fas fa-chevron-right float-end"></i
-                  ></a>
-                            </li>
-                            <li>
-                                <a href="#">collections <i class="fas fa-chevron-right float-end"></i
-                  ></a>
-                            </li>
-                            <li>
-                                <a href="#">contact <i class="fas fa-chevron-right float-end"></i
-                  ></a>
-                            </li>
-                        </ul>
                     </div>
-                    <div class="input_search">
-                        <input type="text" placeholder="Searching for..." />
-                    </div>
+                    <input type="checkbox" hidden class="cart_hidden_input_pc" id="cart_hidden_pc" />
+                    <label for="cart_hidden_pc" class="overlay-cart-pc"></label>
 
-                    <div class="cart_mobile">
-                        <div class="cart_mobile_top">
+                    <div class="cart_pc">
+                        <div class="cart_pc_top">
                             <div class="
-                    cart_mobile_title
+                    cart_pc_title
                     d-flex
                     justify-content-center
                     align-items-center
                   ">
                                 your card
                             </div>
-
                             <div class="close-cart">
-                                <label for="cart_hidden_mobile"><i class="fas fa-times"></i
-                  ></label>
+                                <label for="cart_hidden_pc" class="fas fa-times"></label>
                             </div>
                             <div class="quality-cart">
                                 <p>0</p>
@@ -194,17 +98,122 @@
                 </div>
             </div>
         </div>
+
+        <!-- Menu mobile -->
+        <div class="menu-mobile">
+            <div class="container p-0">
+
+
+                <div class="menu-mobile-main">
+                    <div class="row menu-mobile-main-row">
+                        <input type="checkbox" hidden class="search_hidden_input" id="search_hidden_mobile" />
+                        <label for="search_hidden_mobile" class="overlay-search"></label>
+
+                        <input type="checkbox" hidden class="nav_hidden_input" id="nav_hidden_mobile" />
+                        <label for="nav_hidden_mobile" class="overlay"></label>
+
+                        <input type="checkbox" hidden class="cart_hidden_input" id="cart_hidden_mobile" />
+                        <label for="cart_hidden_mobile" class="overlay-cart"></label>
+
+                        <input type="checkbox" hidden class="wish-list_hidden_input" id="wish-list_hidden_mobile" />
+
+                        <div class="col-lg-4 col-4 menu-mobile-left d-flex align-items-center p-0">
+                            <label for="nav_hidden_mobile" class="icon-nav-mobile"><i class="fas fa-bars icon-menu-mobile"></i
+              ></label>
+                            <label for="search_hidden_mobile" class="icon-nav-mobile">
+                <i class="fas fa-search icon-menu-mobile"></i
+              ></label>
+                        </div>
+                        <div class="col-lg-4 col-4 menu-mobile-logo d-flex justify-content-center">
+                            <div class="logo d-flex align-items-center">
+                                franco
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4 col-4 menu-mobile-right d-flex align-items-center justify-content-end p-0">
+                            <i class="far fa-heart icon-menu-mobile"></i>
+                            <label for="cart_hidden_mobile" class="fas fa-shopping-cart icon-menu-mobile"></label>
+                        </div>
+
+                        <div class="nav_mobile">
+                            <div class="title-menu d-flex align-items-center">
+                                <h1 class="me-auto">menu</h1>
+                                <label for="nav_hidden_mobile" class="fas fa-times"></label>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#">home <i class="fas fa-chevron-right float-end"></i
+                  ></a>
+                                </li>
+                                <li>
+                                    <a href="#">women <i class="fas fa-chevron-right float-end"></i
+                  ></a>
+                                </li>
+                                <li>
+                                    <a href="#">men <i class="fas fa-chevron-right float-end"></i
+                  ></a>
+                                </li>
+                                <li>
+                                    <a href="#">about us <i class="fas fa-chevron-right float-end"></i
+                  ></a>
+                                </li>
+                                <li>
+                                    <a href="#">blog <i class="fas fa-chevron-right float-end"></i
+                  ></a>
+                                </li>
+                                <li>
+                                    <a href="#">collections <i class="fas fa-chevron-right float-end"></i
+                  ></a>
+                                </li>
+                                <li>
+                                    <a href="#">contact <i class="fas fa-chevron-right float-end"></i
+                  ></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="input_search">
+                            <input type="text" placeholder="Searching for..." />
+                        </div>
+
+                        <div class="cart_mobile">
+                            <div class="cart_mobile_top">
+                                <div class="
+                    cart_mobile_title
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                  ">
+                                    your card
+                                </div>
+                                <div class="close-cart">
+                                    <label for="cart_hidden_mobile"><i class="fas fa-times"></i
+                  ></label>
+                                </div>
+                                <div class="quality-cart">
+                                    <p>0</p>
+                                </div>
+                            </div>
+                            <div class="cart_mobile_content">
+                                <div class="cart_mobile_list_item">
+                                    <p>No products in the cart.</p>
+                                    <a href="">Start shopping</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- End main menu -->
 
     <!-- Banner -->
     <div class="banner">
         <div class="container">
-
             <div class="list-banner">
                 <div class="main-banner">
                     <img src="assets/images/banner1.png" alt="" />
-                    <div class="main-banner-title text-end">
+                    <div class="main-banner-title text-right">
                         <p>Two High-end Materials</p>
                         <a href="#">Shop Now</a>
                     </div>
@@ -236,7 +245,7 @@
     <!-- Featured items -->
     <div class="featured-items">
         <div class="container">
-            <div class="row">
+            <div class="row m-0">
                 <div class="featured-items-title">
                     <p>Franco</p>
                     <div class="featured-items-title-big">
@@ -371,18 +380,20 @@
     <!-- Blogs -->
     <div class="new-blogs">
         <div class="container">
-            <div class="row">
-                <div class="new-blogs-title">
-                    <p>latest</p>
-                    <h1>news & Events</h1>
+            <div class="new-blog">
+                <div class="row">
+                    <div class="new-blogs-title">
+                        <p>latest</p>
+                        <h1>news & Events</h1>
+                    </div>
                 </div>
-            </div>
-            <div class="row slider-post">
-                <div class="slider">
-                    <div class="post">
-                        <div class="post-item">
+                <div class="row">
+                    <div class="slider">
+
+                        <div class="post">
+
                             <div class="post-image">
-                                <img src="assets/images/blog1.png" alt="" />
+                                <a href="#"><img src="assets/images/blog1.png" alt="" /></a>
                                 <div class="date text-center text-center">
                                     <p class="month">Jun</p>
                                     <p class="day">12</p>
@@ -402,243 +413,246 @@
                   </p>
                   <p class="post-rate-heart"><i class="far fa-heart"></i> 6</p>
                 </div>
-              </div>
-            </div>
-            <div class="post">
-              <div class="post-item">
-                <div class="post-image">
-                  <img src="assets/images/blog2.png" alt="" />
-                  <div class="date text-center text-center">
-                    <p class="month">Jun</p>
-                    <p class="day">12</p>
-                  </div>
-                </div>
-                <div class="post-content">
-                  <a href="#" class="post-content-title"
-                    >Vivamus non dignissim elit</a
-                  >
-                  <p class="post-content-main">
-                    Aliquam tempor sagittis neque, vel aliquam risus consectetur
-                    vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.
-                  </p>
-                </div>
-                <div class="post-rate d-flex">
-                  <p class="post-rate-commnent">
-                    <i class="far fa-comment"></i> 12
-                  </p>
-                  <p class="post-rate-heart"><i class="far fa-heart"></i> 6</p>
-                </div>
-              </div>
-            </div>
-            <div class="post">
-              <div class="post-item">
-                <div class="post-image">
-                  <img src="assets/images/blog3.png" alt="" />
-                  <div class="date text-center text-center">
-                    <p class="month">Jun</p>
-                    <p class="day">12</p>
-                  </div>
-                </div>
-                <div class="post-content">
-                  <a href="#" class="post-content-title"
-                    >Ut lacinia erat ut diam volutpat</a
-                  >
-                  <p class="post-content-main">
-                    Aliquam tempor sagittis neque, vel aliquam risus consectetur
-                    vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.
-                  </p>
-                </div>
-                <div class="post-rate d-flex">
-                  <p class="post-rate-commnent">
-                    <i class="far fa-comment"></i> 12
-                  </p>
-                  <p class="post-rate-heart"><i class="far fa-heart"></i> 6</p>
-                </div>
-              </div>
-            </div>
-            <div class="post">
-              <div class="post-item">
-                <div class="post-image">
-                  <img src="assets/images/blog1.png" alt="" />
-                  <div class="date text-center text-center">
-                    <p class="month">Jun</p>
-                    <p class="day">12</p>
-                  </div>
-                </div>
-                <div class="post-content">
-                  <a href="#" class="post-content-title"
-                    >In commodo dolor vitae</a
-                  >
-                  <p class="post-content-main">
-                    Aliquam tempor sagittis neque, vel aliquam risus consectetur
-                    vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.
-                  </p>
-                </div>
-                <div class="post-rate d-flex">
-                  <p class="post-rate-commnent">
-                    <i class="far fa-comment"></i> 12
-                  </p>
-                  <p class="post-rate-heart"><i class="far fa-heart"></i> 6</p>
-                </div>
-              </div>
-            </div>
-            <div class="post">
-              <div class="post-item">
-                <div class="post-image">
-                  <img src="assets/images/blog2.png" alt="" />
-                  <div class="date text-center text-center">
-                    <p class="month">Jun</p>
-                    <p class="day">12</p>
-                  </div>
-                </div>
-                <div class="post-content">
-                  <a href="#" class="post-content-title"
-                    >In commodo dolor vitae</a
-                  >
-                  <p class="post-content-main">
-                    Aliquam tempor sagittis neque, vel aliquam risus consectetur
-                    vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.
-                  </p>
-                </div>
-                <div class="post-rate d-flex">
-                  <p class="post-rate-commnent">
-                    <i class="far fa-comment"></i> 12
-                  </p>
-                  <p class="post-rate-heart"><i class="far fa-heart"></i> 6</p>
-                </div>
-              </div>
-            </div>
-            <div class="post">
-              <div class="post-item">
-                <div class="post-image">
-                  <img src="assets/images/blog3.png" alt="" />
-                  <div class="date text-center text-center">
-                    <p class="month">Jun</p>
-                    <p class="day">12</p>
-                  </div>
-                </div>
-                <div class="post-content">
-                  <a href="#" class="post-content-title"
-                    >In commodo dolor vitae</a
-                  >
-                  <p class="post-content-main">
-                    Aliquam tempor sagittis neque, vel aliquam risus consectetur
-                    vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.
-                  </p>
-                </div>
-                <div class="post-rate d-flex">
-                  <p class="post-rate-commnent">
-                    <i class="far fa-comment"></i> 12
-                  </p>
-                  <p class="post-rate-heart"><i class="far fa-heart"></i> 6</p>
-                </div>
-              </div>
-            </div>
-            <div class="post">
-              <div class="post-item">
-                <div class="post-image">
-                  <img src="assets/images/blog1.png" alt="" />
-                  <div class="date text-center text-center">
-                    <p class="month">Jun</p>
-                    <p class="day">12</p>
-                  </div>
-                </div>
-                <div class="post-content">
-                  <a href="#" class="post-content-title"
-                    >In commodo dolor vitae</a
-                  >
-                  <p class="post-content-main">
-                    Aliquam tempor sagittis neque, vel aliquam risus consectetur
-                    vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.
-                  </p>
-                </div>
-                <div class="post-rate d-flex">
-                  <p class="post-rate-commnent">
-                    <i class="far fa-comment"></i> 12
-                  </p>
-                  <p class="post-rate-heart"><i class="far fa-heart"></i> 6</p>
-                </div>
-              </div>
-            </div>
-            <div class="post">
-              <div class="post-item">
-                <div class="post-image">
-                  <img src="assets/images/blog2.png" alt="" />
-                  <div class="date text-center text-center">
-                    <p class="month">Jun</p>
-                    <p class="day">12</p>
-                  </div>
-                </div>
-                <div class="post-content">
-                  <a href="#" class="post-content-title"
-                    >In commodo dolor vitae</a
-                  >
-                  <p class="post-content-main">
-                    Aliquam tempor sagittis neque, vel aliquam risus consectetur
-                    vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.
-                  </p>
-                </div>
-                <div class="post-rate d-flex">
-                  <p class="post-rate-commnent">
-                    <i class="far fa-comment"></i> 12
-                  </p>
-                  <p class="post-rate-heart"><i class="far fa-heart"></i> 6</p>
-                </div>
-              </div>
-            </div>
-            <div class="post">
-              <div class="post-item">
-                <div class="post-image">
-                  <img src="assets/images/blog3.png" alt="" />
-                  <div class="date text-center text-center">
-                    <p class="month">Jun</p>
-                    <p class="day">12</p>
-                  </div>
-                </div>
-                <div class="post-content">
-                  <a href="#" class="post-content-title"
-                    >In commodo dolor vitae</a
-                  >
-                  <p class="post-content-main">
-                    Aliquam tempor sagittis neque, vel aliquam risus consectetur
-                    vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.
-                  </p>
-                </div>
-                <div class="post-rate d-flex">
-                  <p class="post-rate-commnent">
-                    <i class="far fa-comment"></i> 12
-                  </p>
-                  <p class="post-rate-heart"><i class="far fa-heart"></i> 6</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end blogs -->
+                
+                                </div>
+                                  <div class="post">
 
-    <!-- Footer -->
-    <div class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="row">
-            <div
-              class="col-xl-4 col-sm-12 col-12 col-footer footer-about"
-            >
-              <div class="about">
-                <div class="title">About Franco</div>
-                <div class="content">
-                  <p>
+                            <div class="post-image">
+                                <a href="#"><img src="assets/images/blog2.png" alt="" /></a>
+                                <div class="date text-center text-center">
+                                    <p class="month">Jun</p>
+                                    <p class="day">12</p>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <a href="#" class="post-content-title">Vivamus non dignissim elit</a
+                  >
+                  <p class="post-content-main">
                     Aliquam tempor sagittis neque, vel aliquam risus consectetur
-                    vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris
-                    vulputate mi, eu interdum nunc diam at ipsum.
+                    vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.
                   </p>
                 </div>
-              </div>
-              
-              <div class="social-media">
-                <a href="#"><i class="fab fa-twitter icon-social"></i></a>
+                <div class="post-rate d-flex">
+                  <p class="post-rate-commnent">
+                    <i class="far fa-comment"></i> 12
+                  </p>
+                  <p class="post-rate-heart"><i class="far fa-heart"></i> 6</p>
+                </div>
+                
+                                </div>
+
+                                 <div class="post">
+
+                            <div class="post-image">
+                                <a href="#"><img src="assets/images/blog3.png" alt="" /></a>
+                                <div class="date text-center text-center">
+                                    <p class="month">Jun</p>
+                                    <p class="day">12</p>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <a href="#" class="post-content-title">Ut lacinia erat ut diam volutpat</a
+                  >
+                  <p class="post-content-main">
+                    Aliquam tempor sagittis neque, vel aliquam risus consectetur
+                    vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.
+                  </p>
+                </div>
+                <div class="post-rate d-flex">
+                    
+                  <p class="post-rate-commnent">
+                    <i class="far fa-comment"></i> 12
+                  </p>
+                  <p class="post-rate-heart"><i class="far fa-heart"></i> 6</p>
+                </div>
+                
+                                </div>
+
+  <div class="post">
+
+                            <div class="post-image">
+                                <a href="#"><img src="assets/images/blog1.png" alt="" /></a>
+                                <div class="date text-center text-center">
+                                    <p class="month">Jun</p>
+                                    <p class="day">12</p>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <a href="#" class="post-content-title">In commodo dolor vitae</a
+                  >
+                  <p class="post-content-main">
+                    Aliquam tempor sagittis neque, vel aliquam risus consectetur
+                    vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.
+                  </p>
+                </div>
+                <div class="post-rate d-flex">
+                  <p class="post-rate-commnent">
+                    <i class="far fa-comment"></i> 12
+                  </p>
+                  <p class="post-rate-heart"><i class="far fa-heart"></i> 6</p>
+                </div>
+                
+                                </div>
+                                  <div class="post">
+
+                            <div class="post-image">
+                                <a href="#"><img src="assets/images/blog2.png" alt="" /></a>
+                                <div class="date text-center text-center">
+                                    <p class="month">Jun</p>
+                                    <p class="day">12</p>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <a href="#" class="post-content-title">Vivamus non dignissim elit</a
+                  >
+                  <p class="post-content-main">
+                    Aliquam tempor sagittis neque, vel aliquam risus consectetur
+                    vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.
+                  </p>
+                </div>
+                <div class="post-rate d-flex">
+                  <p class="post-rate-commnent">
+                    <i class="far fa-comment"></i> 12
+                  </p>
+                  <p class="post-rate-heart"><i class="far fa-heart"></i> 6</p>
+                </div>
+                
+                                </div>
+
+                                 <div class="post">
+
+                            <div class="post-image">
+                                <a href="#"><img src="assets/images/blog3.png" alt="" /></a>
+                                <div class="date text-center text-center">
+                                    <p class="month">Jun</p>
+                                    <p class="day">12</p>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <a href="#" class="post-content-title">Ut lacinia erat ut diam volutpat</a
+                  >
+                  <p class="post-content-main">
+                    Aliquam tempor sagittis neque, vel aliquam risus consectetur
+                    vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.
+                  </p>
+                </div>
+                <div class="post-rate d-flex">
+                    
+                  <p class="post-rate-commnent">
+                    <i class="far fa-comment"></i> 12
+                  </p>
+                  <p class="post-rate-heart"><i class="far fa-heart"></i> 6</p>
+                </div>
+                
+                                </div>
+  <div class="post">
+
+                            <div class="post-image">
+                                <a href="#"><img src="assets/images/blog1.png" alt="" /></a>
+                                <div class="date text-center text-center">
+                                    <p class="month">Jun</p>
+                                    <p class="day">12</p>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <a href="#" class="post-content-title">In commodo dolor vitae</a
+                  >
+                  <p class="post-content-main">
+                    Aliquam tempor sagittis neque, vel aliquam risus consectetur
+                    vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.
+                  </p>
+                </div>
+                <div class="post-rate d-flex">
+                  <p class="post-rate-commnent">
+                    <i class="far fa-comment"></i> 12
+                  </p>
+                  <p class="post-rate-heart"><i class="far fa-heart"></i> 6</p>
+                </div>
+                
+                                </div>
+                                  <div class="post">
+
+                            <div class="post-image">
+                                <a href="#"><img src="assets/images/blog2.png" alt="" /></a>
+                                <div class="date text-center text-center">
+                                    <p class="month">Jun</p>
+                                    <p class="day">12</p>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <a href="#" class="post-content-title">Vivamus non dignissim elit</a
+                  >
+                  <p class="post-content-main">
+                    Aliquam tempor sagittis neque, vel aliquam risus consectetur
+                    vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.
+                  </p>
+                </div>
+                <div class="post-rate d-flex">
+                  <p class="post-rate-commnent">
+                    <i class="far fa-comment"></i> 12
+                  </p>
+                  <p class="post-rate-heart"><i class="far fa-heart"></i> 6</p>
+                </div>
+                
+                                </div>
+
+                                 <div class="post">
+
+                            <div class="post-image">
+                                <a href="#"><img src="assets/images/blog3.png" alt="" /></a>
+                                <div class="date text-center text-center">
+                                    <p class="month">Jun</p>
+                                    <p class="day">12</p>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <a href="#" class="post-content-title">Ut lacinia erat ut diam volutpat</a
+                  >
+                  <p class="post-content-main">
+                    Aliquam tempor sagittis neque, vel aliquam risus consectetur
+                    vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.
+                  </p>
+                </div>
+                <div class="post-rate d-flex">
+                    
+                  <p class="post-rate-commnent">
+                    <i class="far fa-comment"></i> 12
+                  </p>
+                  <p class="post-rate-heart"><i class="far fa-heart"></i> 6</p>
+                </div>
+                
+                                </div>
+
+
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end blogs -->
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="container p-0">
+                <div class="footer-content">
+                    <div class="row">
+                        <div class="col-xl-4 col-sm-12 col-12 col-footer footer-about">
+                            <div class="about">
+                                <div class="title">About Franco</div>
+                                <div class="content">
+                                    <p>
+                                        Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris vulputate mi, eu interdum nunc diam at ipsum.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="social-media">
+                                <a href="#"><i class="fab fa-twitter icon-social"></i></a>
                                 <a href="#"><i class="fab fa-linkedin-in icon-social"></i></a>
                                 <a href="#"><i class="fab fa-behance icon-social"></i></a>
                                 <a href="#"><i class="fab fa-dribbble icon-social"></i></a>
@@ -685,9 +699,9 @@
                                         <li>
                                             <i class="far fa-map"></i> 500 Hennessy Road Causeway Bay, Hong Kong
                                         </li>
-                                        <li><i class="fas fa-phone-alt"></i> +1 23456789</li>
+                                        <li><i class="fas fa-phone-alt"></i><a href=""> +1 23456789</a></li>
                                         <li>
-                                            <i class="far fa-envelope"></i> contact@yourdomain.com
+                                            <i class="far fa-envelope"></i> <a href="mailto:contact@yourdomain.com">contact@yourdomain.com</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -699,7 +713,7 @@
         </div>
     </div>
     <div class="footer-bottom">
-        <div class="container">
+        <div class="container p-0">
             <div class="footer-bottom-content">
                 <div class="row">
                     <div class="col-xl-6 col-sm-12 col-12 footer-bottom-left">
