@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <!-- Header-top -->
     <div class="header">
         <div class="header-top d-flex align-items-center">
             <div class="header-top-left me-auto">
@@ -30,10 +31,12 @@
             </div>
         </div>
     </div>
+    <!-- End Header-top -->
+
     <!-- Main menu -->
     <div class="menu">
         <div class="menu-pc">
-            <div class="row abc">
+            <div class="row menu-pc-row">
                 <div class="col-xl-3 col-lg-3">
                     <div class="logo d-flex align-items-center justify-content-center">
                         franco
@@ -50,7 +53,7 @@
                             <li><a href="#">collections</a></li>
                             <li><a href="#">contact</a></li>
                             <li>
-                                <a href="#"><label for="search_hidden_mobile" class="fas fa-search"></label></a>
+                                <a href="#"><i class="fas fa-search"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -58,8 +61,35 @@
 
                 <div class="col-xl-3 col-lg-2 d-flex justify-content-end align-items-center icon">
                     <div class="cart">
-                        <a href="#"><i class="far fa-heart"></i></a>
-                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        <a href="#"><i class="far fa-heart wish-list-icon"></i></a>
+                        <a href="#"><label for="cart_hidden_pc" class="fas fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+                <input type="checkbox" hidden class="cart_hidden_input_pc" id="cart_hidden_pc" />
+                <label for="cart_hidden_pc" class="overlay-cart-pc"></label>
+
+                <div class="cart_pc">
+                    <div class="cart_pc_top">
+                        <div class="
+                    cart_pc_title
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                  ">
+                            your card
+                        </div>
+                        <div class="close-cart">
+                            <label for="cart_hidden_pc" class="fas fa-times"></label>
+                        </div>
+                        <div class="quality-cart">
+                            <p>0</p>
+                        </div>
+                    </div>
+                    <div class="cart_mobile_content">
+                        <div class="cart_mobile_list_item">
+                            <p>No products in the cart.</p>
+                            <a href="">Start shopping</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -166,9 +196,11 @@
         </div>
     </div>
     <!-- End main menu -->
+
     <!-- Banner -->
     <div class="banner">
         <div class="container">
+
             <div class="list-banner">
                 <div class="main-banner">
                     <img src="assets/images/banner1.png" alt="" />
@@ -193,11 +225,14 @@
                             <a href="#">Shop Now</a>
                         </div>
                     </div>
+
                 </div>
             </div>
+
         </div>
     </div>
     <!-- End Banner -->
+
     <!-- Featured items -->
     <div class="featured-items">
         <div class="container">
@@ -209,8 +244,8 @@
                     </div>
                 </div>
             </div>
-            <div class="product-item">
-                <div class="row mb-5">
+            <div class="product-item row-pro-first">
+                <div class="row">
                     <div class="col-xl-3 col-sm-6 col-6 pro-item">
                         <div class="product-image">
                             <img src="assets/images/sp1.png" alt="" />
@@ -221,7 +256,7 @@
                         <a href="#">Suspendisse id volutpat</a>
                         <div class="rate">
                             <i class="far fa-star"></i><i class="far fa-star"></i
-                ><i class="far fa-star"></i><i class="far fa-star"></i>
+                ><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star icon-start-end"></i>
                         </div>
                         <p class="price"><del>$99.00 </del>$84.00</p>
                     </div>
@@ -232,10 +267,10 @@
                                 <a href="#">Add to cart</a>
                             </div>
                         </div>
-                        <a href="#">Suspendisse id volutpat</a>
+                        <a href="#">Lorem ipsum dolor</a>
                         <div class="rate">
                             <i class="far fa-star"></i><i class="far fa-star"></i
-                ><i class="far fa-star"></i><i class="far fa-star"></i>
+                ><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star icon-start-end"></i>
                         </div>
                         <p class="price"><del>$99.00 </del>$84.00</p>
                     </div>
@@ -246,12 +281,12 @@
                                 <a href="#">Add to cart</a>
                             </div>
                         </div>
-                        <a href="#">Suspendisse id volutpat</a>
+                        <a href="#">Proin sed nulla mi</a>
                         <div class="rate">
                             <i class="far fa-star"></i><i class="far fa-star"></i
-                ><i class="far fa-star"></i><i class="far fa-star"></i>
+                ><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star icon-start-end"></i>
                         </div>
-                        <p class="price"><del>$99.00 </del>$84.00</p>
+                        <p class="price">$84.00</p>
                     </div>
                     <div class="col-xl-3 col-sm-6 col-6 pro-item">
                         <div class="product-image">
@@ -260,10 +295,10 @@
                                 <a href="#">Add to cart</a>
                             </div>
                         </div>
-                        <a href="#">Suspendisse id volutpat</a>
+                        <a href="#">Aenean placerat</a>
                         <div class="rate">
                             <i class="far fa-star"></i><i class="far fa-star"></i
-                ><i class="far fa-star"></i><i class="far fa-star"></i>
+                ><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star icon-start-end"></i>
                         </div>
                         <p class="price"><del>$99.00 </del>$84.00</p>
                     </div>
@@ -273,7 +308,7 @@
                 <div class="row mb-4">
                     <div class="col-xl-3 col-sm-6 col-6 pro-item">
                         <div class="product-image">
-                            <img src="assets/images/sp1.png" alt="" />
+                            <img src="assets/images/sp5.png" alt="" />
                             <div class="add-cart">
                                 <a href="#">Add to cart</a>
                             </div>
@@ -281,49 +316,49 @@
                         <a href="#">Suspendisse id volutpat</a>
                         <div class="rate">
                             <i class="far fa-star"></i><i class="far fa-star"></i
-                ><i class="far fa-star"></i><i class="far fa-star"></i>
+                ><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star icon-start-end"></i>
                         </div>
                         <p class="price"><del>$99.00 </del>$84.00</p>
                     </div>
                     <div class="col-xl-3 col-sm-6 col-6 pro-item">
                         <div class="product-image">
-                            <img src="assets/images/sp2.png" alt="" />
+                            <img src="assets/images/sp6.png" alt="" />
                             <div class="add-cart">
                                 <a href="#">Add to cart</a>
                             </div>
                         </div>
-                        <a href="#">Suspendisse id volutpat</a>
+                        <a href="#">Lorem ipsum dolor</a>
                         <div class="rate">
                             <i class="far fa-star"></i><i class="far fa-star"></i
-                ><i class="far fa-star"></i><i class="far fa-star"></i>
+                ><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star icon-start-end"></i>
                         </div>
                         <p class="price"><del>$99.00 </del>$84.00</p>
                     </div>
                     <div class="col-xl-3 col-sm-6 col-6 pro-item">
                         <div class="product-image">
-                            <img src="assets/images/sp3.png" alt="" />
+                            <img src="assets/images/sp7.png" alt="" />
                             <div class="add-cart">
                                 <a href="#">Add to cart</a>
                             </div>
                         </div>
-                        <a href="#">Suspendisse id volutpat</a>
+                        <a href="#">Proin sed nulla mi</a>
                         <div class="rate">
                             <i class="far fa-star"></i><i class="far fa-star"></i
-                ><i class="far fa-star"></i><i class="far fa-star"></i>
+                ><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star icon-start-end"></i>
                         </div>
-                        <p class="price"><del>$99.00 </del>$84.00</p>
+                        <p class="price">$84.00</p>
                     </div>
                     <div class="col-xl-3 col-sm-6 col-6 pro-item">
                         <div class="product-image">
-                            <img src="assets/images/sp4.png" alt="" />
+                            <img src="assets/images/sp8.png" alt="" />
                             <div class="add-cart">
                                 <a href="#">Add to cart</a>
                             </div>
                         </div>
-                        <a href="#">Suspendisse id volutpat</a>
+                        <a href="#">Aenean placerat</a>
                         <div class="rate">
                             <i class="far fa-star"></i><i class="far fa-star"></i
-                ><i class="far fa-star"></i><i class="far fa-star"></i>
+                ><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star icon-start-end"></i>
                         </div>
                         <p class="price"><del>$99.00 </del>$84.00</p>
                     </div>
@@ -332,6 +367,7 @@
         </div>
     </div>
     <!-- End Featured items -->
+
     <!-- Blogs -->
     <div class="new-blogs">
         <div class="container">
@@ -379,7 +415,7 @@
                 </div>
                 <div class="post-content">
                   <a href="#" class="post-content-title"
-                    >In commodo dolor vitae</a
+                    >Vivamus non dignissim elit</a
                   >
                   <p class="post-content-main">
                     Aliquam tempor sagittis neque, vel aliquam risus consectetur
@@ -405,7 +441,7 @@
                 </div>
                 <div class="post-content">
                   <a href="#" class="post-content-title"
-                    >In commodo dolor vitae</a
+                    >Ut lacinia erat ut diam volutpat</a
                   >
                   <p class="post-content-main">
                     Aliquam tempor sagittis neque, vel aliquam risus consectetur
@@ -581,6 +617,7 @@
       </div>
     </div>
     <!-- end blogs -->
+
     <!-- Footer -->
     <div class="footer">
       <div class="container">
@@ -598,64 +635,68 @@
                     vulputate mi, eu interdum nunc diam at ipsum.
                   </p>
                 </div>
-                <div class="social-media"></div>
               </div>
-            </div>
-            <div
-              class="
-                col-xl-4 col-sm-12 col-12 col-footer
-              "
-            >
-              <div class="navigation">
-                <div class="title">Navigation</div>
-                <div class="row">
-                  <div class="col-6">
-                    <ul>
-                      <li><a href="#">Home</a></li>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Our Blog</a></li>
-                                <li><a href="#">Women</a></li>
-                                <li><a href="#">Men</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-6">
-                                <ul>
-                                    <li><a href="#">FAQs</a></li>
-                                    <li><a href="#">Featured Brands</a></li>
-                                    <li><a href="#">Gift Vouchers</a></li>
-                                    <li><a href="#">Affiliates</a></li>
-                                    <li><a href="#">Specials Gift </a></li>
-                                    <li><a href="#">Terms & Conditions</a></li>
-                                </ul>
+              
+              <div class="social-media">
+                <a href="#"><i class="fab fa-twitter icon-social"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in icon-social"></i></a>
+                                <a href="#"><i class="fab fa-behance icon-social"></i></a>
+                                <a href="#"><i class="fab fa-dribbble icon-social"></i></a>
                             </div>
                         </div>
-                    </div>
-                </div>
+                        <div class="
+                col-xl-4 col-sm-12 col-12 col-footer
+              ">
+                            <div class="navigation">
+                                <div class="title">Navigation</div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <ul>
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">Our Blog</a></li>
+                                            <li><a href="#">Women</a></li>
+                                            <li><a href="#">Men</a></li>
+                                            <li><a href="#">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6 list-sevice">
+                                        <ul>
+                                            <li><a href="#">FAQs</a></li>
+                                            <li><a href="#">Featured Brands</a></li>
+                                            <li><a href="#">Gift Vouchers</a></li>
+                                            <li><a href="#">Affiliates</a></li>
+                                            <li><a href="#">Specials Gift </a></li>
+                                            <li><a href="#">Terms & Conditions</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                <div class="
+                        <div class="
                   col-xl-4 col-sm-12 col-12 col-footer
  
                 ">
-                    <div class="location">
-                        <div class="title">Shop location</div>
-                        <div class="location-content">
-                            <ul>
-                                <li>
-                                    <i class="far fa-map"></i> 500 Hennessy Road Causeway Bay, Hong Kong
-                                </li>
-                                <li><i class="fas fa-phone-alt"></i> +1 23456789</li>
-                                <li>
-                                    <i class="far fa-envelope"></i> contact@yourdomain.com
-                                </li>
-                            </ul>
+                            <div class="location">
+                                <div class="title">Shop location</div>
+                                <div class="location-content">
+                                    <ul>
+                                        <li>
+                                            <i class="far fa-map"></i> 500 Hennessy Road Causeway Bay, Hong Kong
+                                        </li>
+                                        <li><i class="fas fa-phone-alt"></i> +1 23456789</li>
+                                        <li>
+                                            <i class="far fa-envelope"></i> contact@yourdomain.com
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
     </div>
     <div class="footer-bottom">
         <div class="container">
@@ -695,6 +736,8 @@
         </div>
     </div>
     <!-- End Footer -->
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="assets/js/slick.js"></script>
