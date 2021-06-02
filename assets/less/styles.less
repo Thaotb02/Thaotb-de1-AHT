@@ -85,7 +85,6 @@ video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
 }
 /* Font */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&family=Pacifico&display=swap");
@@ -233,7 +232,9 @@ video {
 .main-banner {
   position: relative;
   float: left;
-  margin-right: 30px;
+  img{
+    width: 100%;
+  }
   &-title {
     position: absolute;
     right: 92px;
@@ -257,12 +258,13 @@ video {
     }
   }
 }
-.banner-right {
-  float: left;
-}
+
 .banner-top {
   margin-bottom: 27px;
   position: relative;
+  img{
+    width: 100%;
+  }
   &-title {
     left: 57px;
     top: 88px;
@@ -286,6 +288,10 @@ video {
 }
 .banner-bottom {
   position: relative;
+  
+  img{
+    width: 100%;
+  }
   &-title {
     left: 40px;
     top: 120px;
@@ -327,7 +333,6 @@ video {
   margin-bottom: 74px;
   padding-top: 71px;
   &-title {
-    margin-bottom: 25px;
     p {
       font-size: 12px;
       letter-spacing: 6px;
@@ -360,6 +365,7 @@ video {
   margin-bottom: 45px;
 }
 .pro-item {
+  margin: 25px 0;
   .title-pro{
     margin-top: 14px;
       a {
@@ -374,9 +380,12 @@ video {
   }
 
   .product-image {
+    img{
+      width: 100%;
+    }
     position: relative;
     .add-cart {
-      bottom: 18px;
+      bottom: 5px;
       left: 5px;
       position: absolute;
       a {
@@ -388,6 +397,7 @@ video {
         padding: 12px 15px;
         background: @background-add-cart;
         text-decoration: none;
+        display: block;
         &:hover {
           color: @hover;
         }
@@ -1016,15 +1026,6 @@ button:before {
   .list-banner {
     margin-left: 0px;
   }
-  .main-banner {
-    margin-right: 0px;
-  }
-  .banner-right {
-    width: 100%;
-    img {
-      width: 100%;
-    }
-  }
   .featured-items-title {
     padding-left: 20px;
   }
@@ -1315,14 +1316,6 @@ button:before {
     img {
       width: 100%;
     }
-  }
-  .banner-top {
-    img {
-      width: 83%;
-    }
-  }
-  .banner-bottom {
-    .banner-top();
   }
   .pro-item {
     padding: 10px;
