@@ -514,6 +514,19 @@ video {
   opacity: 0.75;
   color: #8262b5 !important;
 }
+.slick-dots li button:before {
+  font-size: 10px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: 0.25;
+  color: #ccbfe0;
+}
 /* Footer */
 .footer {
   background-color: #222222;
@@ -577,6 +590,7 @@ video {
   color: #6e6e6e;
 }
 .location .location-content ul li a:hover {
+  color: #f7f7f7;
   text-decoration: underline;
 }
 .location .location-content ul li i {

@@ -122,7 +122,7 @@ video {
 @start-dark: #d1d1d1;
 @background-post:#fff;
 @heart-icon:#ff4628;
-
+@dot-blogs:#ccbfe0;
 /* Header-top*/
 
 .header-top {
@@ -534,9 +534,30 @@ video {
   button:before {
     opacity: .75;
     color: @hover !important;
+
 }
  }
 }
+ .slick-dots{
+li {
+button:before {
+ 
+        font-size: 10px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: @dot-blogs;
+}
+ }
+
+}
+
 
 /* Footer */
 .footer {
@@ -609,6 +630,7 @@ video {
           text-decoration: none;
           color: @content-footer;
           &:hover{
+            color: @title-content-footer;
             text-decoration: underline;
           }
         }
