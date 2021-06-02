@@ -132,7 +132,7 @@ video {
 /* Header-top*/
 .header-top {
   width: 100%;
-  background-color: #222;
+  background-color: #222222;
   height: 45px;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -347,17 +347,19 @@ video {
 .row-pro-first {
   margin-bottom: 45px;
 }
-.pro-item a {
+.pro-item .title-pro {
+  margin-top: 14px;
+}
+.pro-item .title-pro a {
   text-decoration: none;
   font-size: 14px;
   color: #000;
   font-family: "Montserrat", sans-serif;
 }
-.pro-item a:hover {
+.pro-item .title-pro a:hover {
   color: #8262b5;
 }
 .pro-item .product-image {
-  margin-bottom: 14px;
   position: relative;
 }
 .pro-item .product-image .add-cart {
@@ -370,7 +372,7 @@ video {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  color: #424242;
+  color: #000;
   padding: 12px 15px;
   background: #fff;
   text-decoration: none;
@@ -395,7 +397,7 @@ video {
   font-weight: 600;
 }
 .pro-item .price del {
-  color: #9f9f9f;
+  color: #999999;
   font-weight: none;
 }
 /* Blogs */
@@ -514,7 +516,7 @@ video {
 }
 /* Footer */
 .footer {
-  background-color: #000;
+  background-color: #222222;
 }
 .footer-about .title {
   width: 260px;
@@ -525,14 +527,14 @@ video {
 .footer-about .content p {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  color: #6e6e6e;
+  color: #f7f7f7;
   line-height: 22px;
 }
 .footer-about .social-media {
   margin: 44px 0px 45px;
 }
 .footer-about .social-media a .icon-social {
-  color: #c0c0c0;
+  color: #828282;
   margin-right: 30px;
   font-size: 15px;
 }
@@ -590,7 +592,7 @@ video {
   margin-bottom: 22px;
 }
 .footer-bottom {
-  background: #000;
+  background: #222222;
   border-top: 1px solid #393939;
   padding: 25px 0px;
 }
@@ -771,7 +773,7 @@ video {
 }
 .cart_mobile ul li {
   padding: 18px 20px;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid #393939;
 }
 .cart_mobile ul li a {
   font-weight: 600;
@@ -947,8 +949,8 @@ video {
     padding-left: 20px;
   }
   .product-item {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .product-image img {
     width: 100%;
@@ -974,7 +976,7 @@ video {
     text-align: center;
   }
   .menu-mobile-main-row {
-    margin-right: 0px;
+    margin-right: 0;
   }
   .footer-bottom-left {
     text-align: center;
@@ -1043,9 +1045,6 @@ video {
   .post-item {
     width: 100%;
   }
-  .post {
-    padding: 15px;
-  }
   .slider {
     margin-left: 0px;
     width: 100%;
@@ -1095,7 +1094,7 @@ video {
     height: 30px;
     font-size: 12px;
     line-height: 2px;
-    margin: 0px 2px;
+    padding: 0 10px;
   }
   .menu {
     height: 70px;
@@ -1258,7 +1257,7 @@ video {
     text-align: end;
   }
   .location {
-    padding: 0px 27%;
+    padding: 0 27%;
   }
   .post-imgage img {
     height: 200px;
@@ -1271,6 +1270,6 @@ video {
     height: 200px;
   }
   .footer {
-    padding: 60px 0px 0px;
+    padding: 60px 0 0;
   }
 }
