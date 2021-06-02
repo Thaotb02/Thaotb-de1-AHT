@@ -250,7 +250,6 @@ video {
   background-color: #000;
 }
 .banner-top {
-  margin-bottom: 27px;
   position: relative;
 }
 .banner-top img {
@@ -958,9 +957,6 @@ video {
   .list-banner {
     margin-left: 0px;
   }
-  .featured-items-title {
-    padding-left: 20px;
-  }
   .product-item {
     padding-left: 0;
     padding-right: 0;
@@ -997,8 +993,8 @@ video {
   .footer-bottom-right {
     text-align: center;
   }
-  .banner-top {
-    margin-top: 30px;
+  .banner-right {
+    margin-top: 15px;
   }
   .banner-top-title {
     left: 12%;
@@ -1024,7 +1020,7 @@ video {
     width: 100%;
   }
   .banner-bottom-title {
-    top: 40%;
+    top: 15%;
   }
   .banner-bottom-title .title-top {
     font-size: 30px;
@@ -1075,6 +1071,13 @@ video {
     margin-left: 45%;
     width: 8%;
   }
+  .banner-bottom {
+    overflow: hidden;
+  }
+  .banner-bottom img {
+    position: absolute;
+    transform: translateX(-8%);
+  }
 }
 @media (min-width: 1024px) and (max-width: 1199px) {
   .main-banner-title {
@@ -1114,7 +1117,7 @@ video {
     padding: 20px 0px 20px 20px;
   }
   .main-banner-title {
-    right: 15px;
+    right: 35px;
     bottom: 60px;
   }
   .main-banner-title p {
@@ -1153,6 +1156,9 @@ video {
   .new-blogs-title h1::after {
     margin-left: 45%;
     width: 8%;
+  }
+  .banner-bottom {
+    margin-top: 15px;
   }
 }
 @media (min-width: 321px) and (max-width: 767px) {
@@ -1194,7 +1200,7 @@ video {
     margin-top: 20px;
   }
   .main-banner-title {
-    right: 15px;
+    right: 35px;
     bottom: 60px;
   }
   .main-banner-title p {
@@ -1205,7 +1211,7 @@ video {
     font-size: 12px;
   }
   .banner-bottom-title {
-    left: 25px;
+    left: 35px;
   }
   .footer {
     padding: 60px 0px 30px;
@@ -1213,6 +1219,9 @@ video {
   .new-blogs-title h1::after {
     margin-left: 45%;
     width: 8%;
+  }
+  .banner-bottom {
+    margin-top: 15px;
   }
 }
 /* desktop*/
@@ -1278,5 +1287,8 @@ video {
   }
   .footer {
     padding: 60px 0 0;
+  }
+  .banner-top {
+    padding-bottom: 30px;
   }
 }

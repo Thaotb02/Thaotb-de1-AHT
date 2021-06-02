@@ -260,7 +260,6 @@ video {
 }
 
 .banner-top {
-  margin-bottom: 27px;
   position: relative;
   img{
     width: 100%;
@@ -288,7 +287,6 @@ video {
 }
 .banner-bottom {
   position: relative;
-  
   img{
     width: 100%;
   }
@@ -1026,9 +1024,7 @@ button:before {
   .list-banner {
     margin-left: 0px;
   }
-  .featured-items-title {
-    padding-left: 20px;
-  }
+
   .product-item {
     padding-left: 0;
     padding-right: 0;
@@ -1067,13 +1063,13 @@ button:before {
   .footer-bottom-right {
     .footer-bottom-left();
   }
+  .banner-right{
+    margin-top: 15px;
+  }
   .banner-top {
-    margin-top: 30px;
-
     &-title {
       left: 12%;
       top: 50%;
-
       .title-top {
         font-size: 14px;
       }
@@ -1102,7 +1098,7 @@ button:before {
     width: 100%;
   }
   .banner-bottom-title {
-    top: 40%;
+    top: 15%;
     .title-top {
       font-size: 30px;
     }
@@ -1163,6 +1159,15 @@ button:before {
       width: 8%;
     }
   }
+    .banner-bottom{
+    overflow: hidden;
+  }
+    .banner-bottom{
+    img{
+      position: absolute;
+       transform: translateX(-8%);
+    }
+}
 }
 @media (min-width: 1024px) and (max-width: 1199px) {
   .main-banner-title {
@@ -1186,6 +1191,9 @@ button:before {
     left: 10%;
     top: 30%;
   }
+
+  
+
 }
 
 /*mobile*/
@@ -1203,7 +1211,7 @@ button:before {
     padding: 20px 0px 20px 20px;
   }
   .main-banner-title {
-    right: 15px;
+    right: 35px;
     bottom: 60px;
     p {
       font-size: 14px;
@@ -1245,6 +1253,9 @@ button:before {
       width: 8%;
     }
   }
+  .banner-bottom{
+    margin-top: 15px;
+  }
 }
 @media (min-width: 321px) and (max-width: 767px) {
   .logo {
@@ -1285,7 +1296,7 @@ button:before {
     margin-top: 20px;
   }
   .main-banner-title {
-    right: 15px;
+    right: 35px;
     bottom: 60px;
     p {
       font-size: 20px;
@@ -1296,7 +1307,7 @@ button:before {
     }
   }
   .banner-bottom-title {
-    left: 25px;
+    left: 35px;
   }
   .footer {
     padding: 60px 0px 30px;
@@ -1306,6 +1317,9 @@ button:before {
       margin-left: 45%;
       width: 8%;
     }
+  }
+    .banner-bottom{
+    margin-top: 15px;
   }
 }
 
@@ -1382,5 +1396,8 @@ button:before {
   }
   .footer {
     padding: 60px 0 0;
+  }
+  .banner-top{
+    padding-bottom: 30px;
   }
 }
