@@ -710,7 +710,7 @@ video {
 }
 .nav_mobile .title-menu {
   background-color: #f3f3f3;
-  padding: 20px 10px;
+  padding: 20px 40px;
 }
 .nav_mobile .title-menu h1 {
   text-decoration: none;
@@ -721,7 +721,7 @@ video {
 }
 .nav_mobile ul li {
   list-style: none;
-  padding: 20px 10px;
+  padding: 20px 40px;
   border-bottom: 1px solid #e6e6e6;
 }
 .nav_mobile ul li a {
@@ -994,7 +994,7 @@ video {
     text-align: center;
   }
   .banner-right {
-    margin-top: 15px;
+    margin-top: 30px;
   }
   .banner-top-title {
     left: 12%;
@@ -1076,7 +1076,9 @@ video {
   }
   .banner-bottom img {
     position: absolute;
-    transform: translateX(-8%);
+  }
+  .banner-small {
+    margin-right: 0;
   }
 }
 @media (min-width: 1024px) and (max-width: 1199px) {
@@ -1158,7 +1160,7 @@ video {
     width: 8%;
   }
   .banner-bottom {
-    margin-top: 15px;
+    margin-top: 30px;
   }
 }
 @media (min-width: 321px) and (max-width: 767px) {
@@ -1221,7 +1223,7 @@ video {
     width: 8%;
   }
   .banner-bottom {
-    margin-top: 15px;
+    margin-top: 30px;
   }
 }
 /* desktop*/
