@@ -1082,6 +1082,9 @@ video {
   .banner-small {
     margin-right: 0;
   }
+  .menu-mobile-main-row {
+    margin-right: 9px;
+  }
 }
 @media (min-width: 1024px) and (max-width: 1199px) {
   .main-banner-title {
