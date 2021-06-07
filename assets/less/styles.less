@@ -122,8 +122,16 @@ video {
 @background-post:#fff;
 @heart-icon:#ff4628;
 @dot-blogs:#ccbfe0;
-/* Header-top*/
 
+.tranform-translateX(@_x){
+  -moz-transform: translateX(@_x);
+  -webkit-transform: translateX(@_x);
+  -o-transform: translateX(@_x) ;
+  -ms-transform: translateX(@_x);
+  transform: translateX(@_x);
+}
+
+/* Header-top*/
 .header-top {
   width: 100%;
   background-color: @background-header-top;
@@ -752,7 +760,7 @@ button:before {
   max-width: 100%;
   background: #fff;
   transition: all 0.3s linear;
-  transform: translateX(-100%);
+  .tranform-translateX(100%);
 
   ul {
     li {
@@ -799,7 +807,7 @@ button:before {
   display: block;
 }
 .nav_hidden_input:checked ~ .nav_mobile {
-  transform: translateX(0%);
+  .tranform-translateX(0%);
 }
 
 .search_hidden_input:checked ~ .input_search {
@@ -807,7 +815,7 @@ button:before {
 }
 .cart_mobile {
   padding: 0px;
-  transform: translateX(100%);
+  .tranform-translateX(100%);
   display: block;
   position: fixed;
   z-index: 9999;
@@ -855,7 +863,7 @@ button:before {
 }
 .cart_pc {
   padding: 0px;
-  transform: translateX(100%);
+ .tranform-translateX(100%);
   display: block;
   position: fixed;
   z-index: 9999;
@@ -1003,10 +1011,10 @@ button:before {
   }
 }
 .cart_hidden_input:checked ~ .cart_mobile {
-  transform: translateX(0%);
+.tranform-translateX(0%)
 }
 .cart_hidden_input_pc:checked ~ .cart_pc {
-  transform: translateX(0%);
+  .tranform-translateX(0%)
 }
 
 @media (max-width: 1199px) {
