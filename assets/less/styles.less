@@ -637,7 +637,6 @@ button:before {
   .location-content {
     width: 260px;
     ul {
-      padding-right: 42px;
       i{
         font-size: 14px;
         color: @content-footer;
@@ -768,7 +767,7 @@ button:before {
   max-width: 100%;
   background: #fff;
   transition: all 0.3s linear;
-  .tranform-translateX(100%);
+  .tranform-translateX(-100%);
 
   ul {
     li {
@@ -1108,6 +1107,12 @@ button:before {
       height: 100%;
     }
   }
+  .location-content{
+    ul{
+      padding-right: 20px;
+    padding-left: 20px; 
+    }
+  }
 
 }
 
@@ -1193,6 +1198,12 @@ button:before {
     .menu-mobile-main-row {
     margin-right: 9px;
   }
+    .location-content{
+   
+    i{
+      left: 36%;
+    }
+    }
 }
 @media (min-width: 1024px) and (max-width: 1199px) {
   .main-banner-title {
@@ -1216,6 +1227,12 @@ button:before {
     left: 10%;
     top: 30%;
   }
+    .location-content{
+   
+    i{
+      left: 39%;
+    }
+    }
 
   
 
@@ -1275,6 +1292,13 @@ button:before {
 .banner-bottom{
   margin-top: 30px;
 }
+  .location-content{
+   
+    i{
+      left: 20%;
+    }
+    }
+  
 }
 @media (min-width: 321px) and (max-width: 767px) {
   .logo {
@@ -1336,6 +1360,12 @@ button:before {
   .banner-bottom{
   margin-top: 30px;
 }
+  .location-content{
+   
+    i{
+      left: 25%;
+    }
+    }
 
 }
 
@@ -1416,5 +1446,11 @@ button:before {
   .main-banner-title{
     right: 110px;
     bottom: 162px;
+  }
+   .location-content{
+    ul{
+          padding-right: 42px;
+
+    }
   }
 }

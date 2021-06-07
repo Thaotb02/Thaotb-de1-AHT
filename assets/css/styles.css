@@ -583,9 +583,6 @@ video {
 .location .location-content {
   width: 260px;
 }
-.location .location-content ul {
-  padding-right: 42px;
-}
 .location .location-content ul i {
   font-size: 14px;
   color: #6e6e6e;
@@ -718,11 +715,11 @@ video {
   max-width: 100%;
   background: #fff;
   transition: all 0.3s linear;
-  -moz-transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  -o-transform: translateX(100%);
-  -ms-transform: translateX(100%);
-  transform: translateX(100%);
+  -moz-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
 }
 .nav_mobile .title-menu {
   background-color: #f3f3f3;
@@ -1048,6 +1045,10 @@ video {
   .post-image img {
     height: 100%;
   }
+  .location-content ul {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 /*Responsive*/
 /* ipad */
@@ -1119,6 +1120,9 @@ video {
   .menu-mobile-main-row {
     margin-right: 9px;
   }
+  .location-content i {
+    left: 36%;
+  }
 }
 @media (min-width: 1024px) and (max-width: 1199px) {
   .main-banner-title {
@@ -1141,6 +1145,9 @@ video {
   .banner-bottom-title {
     left: 10%;
     top: 30%;
+  }
+  .location-content i {
+    left: 39%;
   }
 }
 /*mobile*/
@@ -1193,6 +1200,9 @@ video {
   }
   .banner-bottom {
     margin-top: 30px;
+  }
+  .location-content i {
+    left: 20%;
   }
 }
 @media (min-width: 321px) and (max-width: 767px) {
@@ -1250,6 +1260,9 @@ video {
   }
   .banner-bottom {
     margin-top: 30px;
+  }
+  .location-content i {
+    left: 25%;
   }
 }
 /* desktop*/
@@ -1318,5 +1331,8 @@ video {
   .main-banner-title {
     right: 110px;
     bottom: 162px;
+  }
+  .location-content ul {
+    padding-right: 42px;
   }
 }
